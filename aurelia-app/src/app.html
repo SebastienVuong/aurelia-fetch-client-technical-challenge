@@ -1,0 +1,12 @@
+<template>
+    <div class="user {user.gender}" repeat.for="user of users">
+        <div class="top-row">
+            <img class="profile-picture" src.bind="user.picture.thumbnail">
+            <p class="username">user.login.username</p>
+        </div>
+        <div class="user-details">
+            <p class="fullname">{user.name.title} {user.name.first} {user.name.last}</p>
+            <a class="email" href="mailto:{user.email}">{user.email}</a>
+        </div>
+    </div>
+</template>
