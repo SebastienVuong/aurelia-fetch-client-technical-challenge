@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Aurelia</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="src/styles.css">
-    </head>
-    <body aurelia-app class="container">
-        Start of body
-        <script src="scripts/system.js"></script>
-        <script src="scripts/aurelia-core.min.js"></script>
-        <script>
-            System.import('aurelia-bootstrapper');
-        </script>
-        <script src="scripts/config-typescript.js"></script>
-        End of body
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Aurelia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
+  </head>
+
+  <body aurelia-app>
+    <script src="scripts/vendor-bundle.js"></script>
+    <script>SystemJS.import("aurelia-bootstrapper").catch(function(err) { console.log(err); })</script>
+  </body>
 </html>

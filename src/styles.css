@@ -1,0 +1,39 @@
+body {
+    background-color: lightyellow;
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+.top-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.username {
+    width: 250px;
+    padding-left: 10px;
+}
+
+.user {
+    border-color: dimgray;
+    border-style: solid;
+    border-width: thin;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 3px 0px rgba(107,107,107,1);
+    transition: 0.5s;
+}
+
+.user:hover {
+    background-color: plum;
+}
+
+.male {
+    background-color: powderblue;
+}
+
+.female {
+    background-color: mistyrose;
+}
