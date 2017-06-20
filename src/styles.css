@@ -1,5 +1,7 @@
 body {
     background-color: lightyellow;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .profile-picture {
@@ -24,10 +26,22 @@ body {
     padding: 10px;
     box-shadow: 10px 10px 3px 0px rgba(107,107,107,1);
     transition: 0.5s;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100px;
 }
 
 .user:hover {
     background-color: plum;
+    position: relative;
+    left: 2px;
+    top: 2px;
+    width: 296px;
+    height: 96px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+    margin-right: 24px;
 }
 
 .male {
